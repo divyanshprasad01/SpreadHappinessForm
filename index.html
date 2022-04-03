@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Happiness</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <nav id="nav_bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Spread Happiness</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More By Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchBox" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <video autoplay muted loop id="bg_video">
+        <source src="bg2.mp4" type="video/mp4">
+    </video>
+
+    <h1 id="welcomeText">Welcome To Spread Happiness Program</h1>
+
+    <div id="addNote" class="card text-center">
+        <div class="card-header">
+            "Happiness is the only good. The time to be happy is now.
+The place to be happy is here The best way to be happy is to make others happy"
+          ~by Robert G. Ingersoll.
+        </div>
+
+        <div class="card-header">
+            Here we help you find what being happy means, and help you find ways to make yourself happy.
+Happiness is not just about laughing, it is also about feeling confident, dropping the stress level and staying healthy.
+        </div>
+
+        <div class="card-header">
+            <ul>
+                <h4>Ways to be happy:</h4>
+                <h6>Watch Mr Bean</h6>
+                <h6>Exercise</h6>
+                <h6>Eat healthy and tasty</h6>
+                <h6>Meditate</h6>
+                <h6>Hangout with friends</h6>
+            </ul>
+        </div>
+
+        <div class="card-header">
+            Fill this form to join us
+        </div>
+        <div class="card-body">
+            <input id="name" class="form-control form-control-lg" type="text" placeholder="Name">
+            <input id="age" class="form-control form-control-lg" type="number" placeholder="Age">
+            <input id="dob" class="form-control form-control-lg" type="date" placeholder="date">
+            <input id="phone" class="form-control form-control-lg" type="number" placeholder="phone number">
+            <input id="address" class="form-control form-control-lg" type="text" placeholder="address">
+            <input id="country" class="form-control form-control-lg" type="text" placeholder="Country">
+            <!-- <textarea id="notes" class="form-control" rows="3" placeholder="Enter your Notes here"></textarea> -->
+            <button id="saveButton" class="btn btn-primary">Save Note</button>
+        </div>
+        <div class="card-footer text-muted">
+            ...
+        </div>
+    </div>
+    <div id="savedNotes" class="row container-fluid">
+
+        <h3>There is Nothing Saved to show !! Please go and save one.....</h3>
+    </div>
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="magic_notes.js"></script>
+
+</html>
