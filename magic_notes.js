@@ -9,6 +9,11 @@ addbtn.addEventListener('click', function() {
     let mphone = document.getElementById('phone')
     let maddress = document.getElementById('address');
     let mcountry = document.getElementById('country')
+    
+     if(mName.value.length == 0 || mAge.value.length == 0 || mdob.value.length == 0 || mphone.value.length == 0 || maddress.value.length == 0 || mcountry.value.length == 0){
+        alert("All Fields Are Mandatory!!!")
+        return 0;
+    }
 
     //an object to store title and note 
     let myObj = {
